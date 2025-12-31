@@ -1,72 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Drive_Decor | Car Wash & Polishing in Ranchi</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Drive_Decor | Car Wash in Ranchi</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- OFFER POPUP -->
-<div id="offerPopup" class="popup">
-    <h3>🎉 Special Offer!</h3>
-    <p>Free Car Perfume with Wash & Polishing</p>
-    <button onclick="closePopup()">Close</button>
-</div>
-
-<header class="fade-in">
-    <h1>Drive_Decor</h1>
-    <p>Premium Car Washing & Polishing Services in Ranchi</p>
+<header>
+  <img src="images/logo.png" class="logo">
 </header>
 
-<section class="card fade-in">
-    <h2>Our Services</h2>
-    <ul class="service-list">
-        <li>🚿 Car Washing</li>
-        <li>✨ Car Polishing</li>
-        <li>🧽 Interior Cleaning</li>
-    </ul>
+<!-- HERO SLIDER -->
+<div class="slider">
+  <img src="images/hero1.jpg" class="slide active">
+  <img src="images/hero2.jpg" class="slide">
+  <img src="images/hero3.jpg" class="slide">
+</div>
+
+<section class="section">
+  <h2>Our Services</h2>
+  <ul>
+    <li>🚗 Car Washing</li>
+    <li>✨ Car Polishing</li>
+    <li>🧼 Interior Cleaning</li>
+  </ul>
 </section>
 
-<section class="card slide-up">
-    <h2>Special Offers</h2>
-    <ul>
-        <li>✔ Free Car Perfume with Wash & Polishing</li>
-        <li>✔ Wash 4 Cars – Get Car Charger FREE</li>
-        <li>✔ Flat 20% OFF for New Customers</li>
-    </ul>
+<section class="section">
+  <h2>Special Offers</h2>
+  <ul>
+    <li>🎁 Free Car Perfume with Wash & Polishing</li>
+    <li>🔌 Wash 4 Cars – Get Car Charger FREE</li>
+    <li>💸 Flat 20% OFF for New Customers</li>
+  </ul>
 </section>
 
-<section class="card fade-in">
-    <h2>Pricing</h2>
-    <p>Basic Wash: <strong>₹299</strong></p>
-    <p>Premium Wash: <strong>₹499</strong></p>
-    <p>Full Polishing: <strong>₹1,499</strong></p>
+<section class="section">
+  <h2>Pricing</h2>
+  <p>Basic Wash: ₹299</p>
+  <p>Premium Wash: ₹499</p>
+  <p>Full Polishing: ₹1,499</p>
 </section>
 
-<section class="card fade-in">
-    <h2>Book a Service</h2>
-    <form onsubmit="sendWhatsApp(); return false;">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="tel" id="phone" placeholder="Mobile Number" required>
-        <select id="service">
-            <option>Car Wash</option>
-            <option>Car Polishing</option>
-            <option>Interior Cleaning</option>
-            <option>Monthly Package</option>
-        </select>
-        <button type="submit">📲 Book via WhatsApp</button>
-    </form>
+<section class="section">
+  <h2>Book a Service</h2>
+  <form onsubmit="sendWhatsApp(); return false;">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="mobile" placeholder="Mobile Number" required>
+    <select id="service">
+      <option>Car Wash</option>
+      <option>Car Polishing</option>
+      <option>Interior Cleaning</option>
+    </select>
+    <button type="submit">Book via WhatsApp</button>
+  </form>
 </section>
 
 <footer>
-    📍 Ranchi &nbsp; | &nbsp; 📞 +91 7549126937
+  📍 Ranchi | 📞 +91 7549126937
 </footer>
-
-<!-- FLOATING BUTTONS -->
-<a href="https://wa.me/917549126937" class="float whatsapp">💬</a>
-<a href="tel:+917549126937" class="float call">📞</a>
 
 <script src="script.js"></script>
 </body>
