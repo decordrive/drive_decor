@@ -1,19 +1,12 @@
-// HERO SLIDER
-let slides = document.querySelectorAll(".slide");
-let index = 0;
+function bookNow() {
+    let name = document.getElementById("name").value;
+    let mobile = document.getElementById("mobile").value;
+    let service = document.getElementById("service").value;
 
-setInterval(() => {
-  slides[index].classList.remove("active");
-  index = (index + 1) % slides.length;
-  slides[index].classList.add("active");
-}, 3000);
+    let message = `Hello Drive_Decor,%0A
+Name: ${name}%0A
+Mobile: ${mobile}%0A
+Service Required: ${service}`;
 
-// WHATSAPP BOOKING
-function sendWhatsApp() {
-  let name = document.getElementById("name").value;
-  let mobile = document.getElementById("mobile").value;
-  let service = document.getElementById("service").value;
-
-  let msg = `Hello Drive_Decor,%0AName: ${name}%0AMobile: ${mobile}%0AService: ${service}`;
-  window.open(`https://wa.me/917549126937?text=${msg}`, "_blank");
+    window.open(`https://wa.me/917549126937?text=${message}`, "_blank");
 }
