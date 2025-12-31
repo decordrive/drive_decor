@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Drive_Decor | Car Wash & Polishing in Ranchi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- OFFER POPUP -->
-<div id="offerPopup" class="popup" style="display:none;">
-    🎉 <strong>Special Offer!</strong><br>
-    Free Car Perfume with Wash & Polishing!
-    <br><br>
+<div id="offerPopup" class="popup">
+    <h3>🎉 Special Offer!</h3>
+    <p>Free Car Perfume with Wash & Polishing</p>
     <button onclick="closePopup()">Close</button>
 </div>
 
@@ -20,30 +20,32 @@
     <p>Premium Car Washing & Polishing Services in Ranchi</p>
 </header>
 
-<section class="services fade-in">
+<section class="card fade-in">
     <h2>Our Services</h2>
-    <ul>
+    <ul class="service-list">
         <li>🚿 Car Washing</li>
         <li>✨ Car Polishing</li>
         <li>🧽 Interior Cleaning</li>
     </ul>
 </section>
 
-<section class="offers slide-up">
+<section class="card slide-up">
     <h2>Special Offers</h2>
-    <p>✔ Free Car Perfume with Wash & Polishing</p>
-    <p>✔ Wash 4 Cars – Get Car Charger FREE</p>
-    <p>✔ Flat 20% OFF for New Customers</p>
+    <ul>
+        <li>✔ Free Car Perfume with Wash & Polishing</li>
+        <li>✔ Wash 4 Cars – Get Car Charger FREE</li>
+        <li>✔ Flat 20% OFF for New Customers</li>
+    </ul>
 </section>
 
-<section class="pricing fade-in">
+<section class="card fade-in">
     <h2>Pricing</h2>
-    <p>Basic Wash: ₹299</p>
-    <p>Premium Wash: ₹499</p>
-    <p>Full Polishing: ₹1,499</p>
+    <p>Basic Wash: <strong>₹299</strong></p>
+    <p>Premium Wash: <strong>₹499</strong></p>
+    <p>Full Polishing: <strong>₹1,499</strong></p>
 </section>
 
-<section class="fade-in">
+<section class="card fade-in">
     <h2>Book a Service</h2>
     <form onsubmit="sendWhatsApp(); return false;">
         <input type="text" id="name" placeholder="Your Name" required>
@@ -54,19 +56,17 @@
             <option>Interior Cleaning</option>
             <option>Monthly Package</option>
         </select>
-        <button type="submit">Book via WhatsApp</button>
+        <button type="submit">📲 Book via WhatsApp</button>
     </form>
 </section>
 
 <footer>
-    <p>📍 Ranchi | 📞 +91 7549126937</p>
+    📍 Ranchi &nbsp; | &nbsp; 📞 +91 7549126937
 </footer>
 
-<!-- WHATSAPP BUTTON -->
-<a href="https://wa.me/917549126937" class="whatsapp-btn">💬 WhatsApp</a>
-
-<!-- CALL BUTTON -->
-<a href="tel:+917549126937" class="call-btn">📞 Call</a>
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/917549126937" class="float whatsapp">💬</a>
+<a href="tel:+917549126937" class="float call">📞</a>
 
 <script src="script.js"></script>
 </body>
