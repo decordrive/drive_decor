@@ -7,37 +7,67 @@
 </head>
 <body>
 
-<header>
+<!-- OFFER POPUP -->
+<div id="offerPopup" class="popup" style="display:none;">
+    🎉 <strong>Special Offer!</strong><br>
+    Free Car Perfume with Wash & Polishing!
+    <br><br>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+<header class="fade-in">
     <h1>Drive_Decor</h1>
     <p>Premium Car Washing & Polishing Services in Ranchi</p>
 </header>
 
-<section class="services">
+<section class="services fade-in">
     <h2>Our Services</h2>
     <ul>
-        <li>Car Washing</li>
-        <li>Car Polishing</li>
-        <li>Interior Cleaning</li>
+        <li>🚿 Car Washing</li>
+        <li>✨ Car Polishing</li>
+        <li>🧽 Interior Cleaning</li>
     </ul>
 </section>
 
-<section class="offers">
+<section class="offers slide-up">
     <h2>Special Offers</h2>
     <p>✔ Free Car Perfume with Wash & Polishing</p>
     <p>✔ Wash 4 Cars – Get Car Charger FREE</p>
     <p>✔ Flat 20% OFF for New Customers</p>
 </section>
 
-<section class="pricing">
+<section class="pricing fade-in">
     <h2>Pricing</h2>
     <p>Basic Wash: ₹299</p>
     <p>Premium Wash: ₹499</p>
     <p>Full Polishing: ₹1,499</p>
 </section>
 
+<section class="fade-in">
+    <h2>Book a Service</h2>
+    <form onsubmit="sendWhatsApp(); return false;">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="Mobile Number" required>
+        <select id="service">
+            <option>Car Wash</option>
+            <option>Car Polishing</option>
+            <option>Interior Cleaning</option>
+            <option>Monthly Package</option>
+        </select>
+        <button type="submit">Book via WhatsApp</button>
+    </form>
+</section>
+
 <footer>
-    <p>📍 Ranchi | 📞 +91 XXXXXXXXXX</p>
+    <p>📍 Ranchi | 📞 +91 7549126937</p>
 </footer>
 
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/917549126937" class="whatsapp-btn">💬 WhatsApp</a>
+
+<!-- CALL BUTTON -->
+<a href="tel:+917549126937" class="call-btn">📞 Call</a>
+
+<script src="script.js"></script>
 </body>
 </html>
