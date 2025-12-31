@@ -1,18 +1,19 @@
-// Show popup after 2 seconds
-setTimeout(() => {
-    document.getElementById("offerPopup").style.display = "block";
-}, 2000);
+// HERO SLIDER
+let slides = document.querySelectorAll(".slide");
+let index = 0;
 
-function closePopup() {
-    document.getElementById("offerPopup").style.display = "none";
-}
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 3000);
 
-// Send booking to WhatsApp
+// WHATSAPP BOOKING
 function sendWhatsApp() {
-    let name = document.getElementById("name").value;
-    let phone = document.getElementById("phone").value;
-    let service = document.getElementById("service").value;
+  let name = document.getElementById("name").value;
+  let mobile = document.getElementById("mobile").value;
+  let service = document.getElementById("service").value;
 
-    let msg = `Hello Drive_Decor,%0AName: ${name}%0APhone: ${phone}%0AService: ${service}`;
-    window.open("https://wa.me/917549126937?text=" + msg, "_blank");
+  let msg = `Hello Drive_Decor,%0AName: ${name}%0AMobile: ${mobile}%0AService: ${service}`;
+  window.open(`https://wa.me/917549126937?text=${msg}`, "_blank");
 }
